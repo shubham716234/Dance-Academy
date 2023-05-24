@@ -1,0 +1,37 @@
+extends  base.pug
+
+block scripts  
+  script(src="../static/index.js") 
+block style 
+  style 
+    include ../static/style.css
+    include ../static/services.css
+block content
+  section#services
+    h2 Our Services
+    div.card 
+        div.first  
+         h3 Ballet Dance 
+         div.card-box
+           div.card-img
+            img(src="../static/ballet_dance.png", alt="ballet", srcset="")
+           div.card-content
+            p Our ballet classes cater to dancers of all ages and skill levels. From introductory classes for beginners to advanced training for aspiring professionals, our experienced instructors will guide you through the fundamentals of classical ballet technique, focusing on posture, grace, and precision.
+            button.btn Enroll Now
+        div.second 
+         h3 Contemporary Dance
+         div.card-box
+           div.card-img
+            img(src="../static/Contemporary_Dance.png", alt="hiphop", srcset="")
+           div.card-content
+            p Discover the freedom of expression through contemporary dance. Our classes combine fluid movements, artistic interpretation, and improvisation techniques to help dancers develop their own unique style. Join us to explore the boundaries of movement and create captivating performances.
+            button.btn Enroll Now
+        div.third  
+         h3 Jazz
+         div.card-box
+           div.card-img
+            img(src="../static/jazz_dance.png", alt="hiphop", srcset="")
+           div.card-content
+            p Get your groove on with our energetic jazz classes. Learn the vibrant and dynamic movements that define this popular dance style. From Broadway-inspired routines to high-energy performances, our jazz classes will help you develop strength, flexibility, and stage presence
+            button.btn 
+             |Enroll Now 

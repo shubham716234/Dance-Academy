@@ -1,0 +1,19 @@
+html
+  head
+    title MY_dance_academy 
+    block scripts
+    block style 
+  body
+    nav#navbar 
+        ul
+         div#logo
+          img(src="../static/logo.png", alt="logo")
+          |MDA 
+         li #[a(href="/") Home ]
+         li #[a(href="/class") Class Info ]
+         li #[a(href="/services") Services ]
+         li #[a(href="/about") About Us ]
+         li #[a(href="/contact") Contact us ]
+    block content
+    footer 
+     | Copyright © 2023 ManeAcademy.com | All Rights Reserved
